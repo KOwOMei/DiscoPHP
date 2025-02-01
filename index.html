@@ -3,6 +3,7 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet" />
+        <link href="src/css/style.css" rel="stylesheet" />
         
         <link rel="icon" href="src/img/favicon.ico" type="image/x-icon" />
         
@@ -11,37 +12,51 @@
 
     
 
-    <body> 
-        <header role="banner">
-            <div>
-                <img src="/src/img/logo.png" alt="DiscoPHP" height="128"/>
-                <h1>DiscoPHP</h1>
+    <body>
+        <!--header-->
+        <div class="block_1">
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="/src/img/logo.png" alt="DiscoPHP" height="128"/>
+                    <h1>DiscoPHP</h1>
+                </div>
+                <div class="header-group">
+                    <div class="header-list">
+                        <ul class="header-list-item">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Подписка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Discord</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-buttons">
+                        <button>Войти</button>
+                        <button>Подключить</button>
+                    </div>  
+                </div>
             </div>
-        </header>
-    
-        <nav role="navigation" aria-label="Главное меню"></nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="subscription.html">Подписка</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://discord.gg/8Zv6cZ">Discord</a></li>
-            </ul>
-    
-            
-            <button>Войти</button>
-            <button>Подключить</button>
-            
-        </nav>  
 
-        <main role="main">
             <section>
-                <h2>Управляй phpbb через Discord</h2>
-                <video src="/src/video/app-prev.mp4" controls></video>
-                <p>Поприветствуйте DiscoPHP - систему по автоматизации выдачи групп пользователям форумов, работающих на движке phpbb. Благодаря нашему решению, вам не придется выдавать роли в Discord’е и на форуме вручную: просто подключите DiscoPHP к своему серверу и форуму, а остальное он сделает сам.
+                <div class="container-title">
+                    <h2>Управляй phpbb через Discord</h2>
+                </div>
+                
+                <!-- На будущее: атрибут "autoplay" работает только при наличии атрибута "muted". Почему? Да всё из-за папки system32. Попробуй её удалить в следующий раз :) -->
+                <div class="container-video-desc">
+                    <div class="container-video">
+                        <video src="/src/video/app-prev.mp4" autoplay muted loop></video> 
+                    </div>
+                    <div class="container-desc">
+                        <p>Поприветствуйте DiscoPHP - систему по автоматизации выдачи групп пользователям форумов, работающих на движке phpbb. Благодаря нашему решению, вам не придется выдавать роли в Discord’е и на форуме вручную: просто подключите DiscoPHP к своему серверу и форуму, а остальное он сделает сам.
                     Забудьте про старые проблемы, особенно когда у вас есть дела поважнее. </p>
+                    </div>
+                </div>
             </section>
-        
+            
+        </div> 
+
+        <div class="block_2">
             <section>
                 <h2>Главные достоинства</h2>
                 
@@ -58,24 +73,32 @@
                     <h3>Низкая стоимость</h3>
                     <p>Месячная подписка на DiscoPHP стоит всего 299₽ в месяц, что соразмерно одному большому кофе. Но за эту стоимость вы получите доступ к полному функционалу DiscoPHP, включая: доступ к экспериментальным функциям, автоматическая настройка привязки групп форума к ролям Discord’а, выделенная линия в тех. поддержке, и много всего другого.</p>
             </section>
-        
-            <section>
-                <img src="src/img/icon_1.png" alt="icon_1" height="128"/>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="src/img/icon_1.png" alt="icon_1" height="128" class="card-icon"/>
                     <h3>3 211</h3>
                     <p>Людей используют DiscoPHP</p>
-                
-                <img src="src/img/icon_2.png" alt="icon_2" height="128"/>
+                </div>
+
+                <div class="card">
+                    <img src="src/img/icon_2.png" alt="icon_2" height="128"/>
                     <h3>1 112</h3>
                     <p>Групп и ролей синхронизировано</p>
+                </div>
                 
-                <img src="src/img/icon_3.png" alt="icon_3" height="128"/>
+                <div class="card">
+                    <img src="src/img/icon_3.png" alt="icon_3" height="128"/>
                     <h3>390+</h3>
                     <p>Часов личного времени сохранено</p>
+                </div>
                 
-                <img src="src/img/icon_4.png" alt="icon_4" height="128"/>
+                <div class="card">
+                    <img src="src/img/icon_4.png" alt="icon_4" height="128"/>
                     <h3>100+</h3>
                     <p>Отзывов с рейтингом 5 звёзд</p>
-            </section>
+                </div>
+            </div>
         
             <section>
                 <h2>Сделано экспертами. Для экспертов.</h2>
@@ -88,19 +111,21 @@
                     <h4>Kean</h4>
                     <p>Главный дизайнер</p>
         
-            </section>    
-        </main>
+            </section>
+        </div>
         
-        <footer role="contentinfo">
-            <img src="src/img/logo.png" height="64"/>
-            <p>DiscoPHP - Удобно, когда просто</p>
-            <nav role="navigation" aria-label="Подвал">
-                <ul>
-                    <li><a href="privacy.html">Политика конфиденциальности</a></li>
-                    <li><a href="terms.html">Условия использования</a></li>
-                    <li><a href="support.html">Поддержка</a></li>
-                </ul>
-            </nav>
-        </footer>
+        <div class="block_3">
+            <footer role="contentinfo">
+                <img src="src/img/logo.png" height="64"/>
+                <p>DiscoPHP - Удобно, когда просто</p>
+                <nav role="navigation" aria-label="Подвал">
+                    <ul>
+                        <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                        <li><a href="terms.html">Условия использования</a></li>
+                        <li><a href="support.html">Поддержка</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
     </body>
 </html>
