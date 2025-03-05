@@ -68,12 +68,6 @@
 
 .header-list-item a:hover {
     text-decoration: underline;
-    color:rgb(4, 0, 255)  
-}
-
-.header-list-item a:active {
-    color: rgb(248, 0, 0);
-    transition: 150ms;
 }
 
 
@@ -138,14 +132,6 @@
     font-weight: 100;
     color: #e3e3e3;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.container-title h2::before {
-    content: url(../icons/star-svgrepo-com.svg);
-    display: inline-block;
-    align-items: center;
-    width: 50px;
-    height: 50px;
 }
 
 .container-video-desc {

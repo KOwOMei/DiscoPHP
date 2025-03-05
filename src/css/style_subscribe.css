@@ -134,42 +134,19 @@
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.container-title h2::before {
-    content: url(../icons/star-svgrepo-com.svg);
-    display: inline-block;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-}
-
 .container-video-desc {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 120px;
-    text-align: left;
     margin-bottom: 30px;
     width: 100%;
-    transform: translateX(100px);
-}
-
-.container-video {
-    display: flex;
-    align-items: center;
-}
-
-.container-video video {
-    width: 400px;
-    height: 175px;
-    border-radius: 5px;
-    object-fit: cover;
-
 }
 
 .container-desc {
     display: inline-block;
+    text-align: center;
     margin: 15px;
-    width: 600px;
+    width: 1000px;
     height: 175px;
 }
 
@@ -179,150 +156,12 @@
     color: #e3e3e3;
 }
 
-.buttons-list-mid {
+.subscribe_cards {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 21px;
-}
-
-.buttons-list-mid button {
-    width: 165px;
-    height: 45px;
-    font-size: 18px;
-    color: #e3e3e3;
-    padding: 10px 20px;
-    border-radius: 7px;
-}
-
-.buttons-list-pressme {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 21px;
-}
-
-.buttons-list-pressme button {
-    width: 250px;
-    height: 45px;
-    font-size: 18px;
-    color: #e3e3e3;
-    padding: 10px 20px;
-    border-radius: 7px;
-}
-
-.button-pressme {
-    border: none;
-    margin: 40px;
-    background: #45CB85;
-    transition: background 600ms ease, box-shadow 600ms ease, color 600ms ease;
-    color: #e3e3e3;
-}
-
-.button-pressme::before {
-    content: url(../icons/plus-svgrepo-com.svg);
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    color:#0479ed
-}
-
-.button-pressme:focus {
-    background: yellow;     
-    color:rgba(0, 0, 0, 0.8);
-    box-shadow: 0 5px 0 5px rgba(0, 0, 0, 0.5);
-    
-}
-
-.list-first {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.list-first-item li{
-    display: none;
-}
-
-.list-first-item :first-child{
-    display: block;
-    text-decoration: dotted;
-    color:#45CB85
-}
-
-.list-unique {
-    display: flex;
-    margin-top: 100px;
-    align-items: center;
-    justify-content: center;
-}
-
-.list-unique li{
-    display: flex;
-    color: #e3e3e3
-}
-
-.list-unique li::before {
-    content: "✨"
-}
-
-
-.container-func {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    width: 1100px;
-    height: 300px;
-    margin: 100px auto;
-    gap: 150px;
-}
-
-.container-func-img {
-    display: flex;
-    align-items: center;
-}
-
-.container-func-img img{
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-}
-
-.container-func-desc {
-    display: block;
-    margin: 30px auto;
-    width: 645px;
-    height: 240px;
-    border-radius: 20px;
-    padding: 1%;
-    transition: background 600ms ease;
-}
-
-.container-func .container-func-desc:hover {
-    background: rgba(21, 49, 189, 0.25);
-    
-}
-
-.container-func-desc h3{
-    font-size: 48px;
-    font-weight: 800;
-    color: #e3e3e3;
-}
-
-.container-func-desc p{
-    font-size: 18px;
-    font-weight: 400;
-    color: #2D2D2D;
-}
-
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1295px;
-    height: 335px;  
+    width: 1540px;
+    height: 850px;  
     margin: 0 auto;
     margin-top: 300px;
     gap: 25px;
@@ -331,17 +170,17 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 305px;
-    height: 335px;
+    width: 480px;
+    height: 850px;
     background: rgba(69,203,133,0.25);
-    padding: 30px 40px;
+    padding: 15px 30px;
     border-radius: 20px;
     text-align: center;
     gap: 30px;
     transition: background 700ms ease, transform 700ms ease, box-shadow 700ms ease;
 }
 
-.cards .card:hover {
+.subscribe_cards .card:hover {
     background: rgba(69,203,133,0.5);
     transform: translateY(-20px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -459,7 +298,7 @@
     width: 1920px;
     align-items: center;
     margin: 0 auto;
-    margin-top: 250px;
+    margin-top: 300px;
     box-sizing: border-box;
     gap: 145px;
 }
