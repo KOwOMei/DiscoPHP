@@ -67,11 +67,7 @@
 }
 
 .header-list-item a:hover {
-<<<<<<< HEAD:src/css/style.css
     text-decoration: underline; 
-=======
-    text-decoration: underline;
->>>>>>> b298d773cd498054f1951b58b9be4a67cc357cb2:src/css/style_index.css
 }
 
 
@@ -138,10 +134,6 @@
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-<<<<<<< HEAD:src/css/style.css
-
-=======
->>>>>>> b298d773cd498054f1951b58b9be4a67cc357cb2:src/css/style_index.css
 .container-video-desc {
     display: flex;
     align-items: center;
