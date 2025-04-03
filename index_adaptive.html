@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet" />
-        <link href="src/css/style_index.css" rel="stylesheet" />
+        <link href="src/css/style_index_adaptive.css" rel="stylesheet" />
         
         <link rel="icon" href="src/img/favicon.ico" type="image/x-icon" />
         
         <title>DiscoPHP - Удобно, когда просто</title>
     </head>
 
-    
-
     <body>
         <!--header-->
         <div class="background">
             <div class="header-container">
                 <div class="header-logo">
-                    <img src="/src/img/logo.png" alt="DiscoPHP" height="128"/>
+                    <img src="/src/img/logo.png" alt="DiscoPHP"/>
                     <h1>DiscoPHP</h1>
                 </div>
+                
+                <!-- Мобильная кнопка меню -->
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
                 <div class="header-group">
                     <div class="header-list">
                         <ul class="header-list-item">
-                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index_adaptive.html">Главная</a></li>
                             <li><a href="subscribe.html">Подписка</a></li>
                             <li><a href="contacts.html">Контакты</a></li>
                             <li><a href="FAQ.html">FAQ</a></li>
@@ -37,22 +45,17 @@
                 </div>
             </div>
 
-            <section>
+            <section class="main-section">
                 <div class="container-title">
                     <h2>Управляй phpbb через Discord</h2>
                 </div>
                 
-                <!-- На будущее: атрибут "autoplay" работает только при наличии атрибута "muted". Почему? Да всё из-за папки system32. Попробуй её удалить в следующий раз :) -->
                 <div class="container-video-desc">
                     <div class="container-video">
                         <video src="/src/video/app-prev.mp4" autoplay muted loop></video> 
                     </div>
                     <div class="container-desc">
-                        <p>Поприветствуйте DiscoPHP - систему по автоматизации<br>
-                        выдачи групп пользователям форумов, работающих на движке phpbb. 
-                        Благодаря нашему решению, вам не придется выдавать роли в Discord’е и на форуме вручную: 
-                        <br>просто подключите DiscoPHP к своему серверу и форуму, а остальное он сделает сам.
-                        <br>Забудьте про старые проблемы, особенно когда у вас есть дела поважнее. </p>
+                        <p>Поприветствуйте DiscoPHP - систему по автоматизации выдачи групп пользователям форумов, работающих на движке phpbb. Благодаря нашему решению, вам не придется выдавать роли в Discord'е и на форуме вручную: просто подключите DiscoPHP к своему серверу и форуму, а остальное он сделает сам. Забудьте про старые проблемы, особенно когда у вас есть дела поважнее.</p>
                     </div>
                 </div>
                 <div class="buttons-list-mid">
@@ -61,7 +64,7 @@
                 </div>
             </section>
 
-            <section>
+            <section class="features-section">
                 <div class="container-title">
                     <h2>Главные достоинства</h2>
                 </div>
@@ -73,14 +76,13 @@
                     <div class="container-func-desc">
                         <h3>Безопасность</h3>
                         <p>DiscoPHP нацелен на сохранение приватной информации своих клиентов, поэтому вы можете не беспокоиться о сохранности своих данных. Благодаря использованию современных протоколов защиты и передачи данных, никаких лишних следов в Интернете не останется. Используя DiscoPHP, вы не рискуете потерять какие-либо свои ключи или пароли.</p>
-                
                     </div>
                 </div>
                 
-                <div class="container-func">
+                <div class="container-func reverse">
                     <div class="container-func-desc">
                         <h3>Удобство и простота</h3>
-                        <p>Чтобы у вас не появлялись какие-либо проблемы при использовании DiscoPHP, мы максимально упростили и переработали дизайн панели управления. Он настолько простой, что даже ребенок лет семи разберётся как подключить DiscoPHP к форуму и серверу в Discord’е. А сам процесс инсталляции занимает не более 5-и минут вашего драгоценного времени. </p>
+                        <p>Чтобы у вас не появлялись какие-либо проблемы при использовании DiscoPHP, мы максимально упростили и переработали дизайн панели управления. Он настолько простой, что даже ребенок лет семи разберётся как подключить DiscoPHP к форуму и серверу в Discord'е. А сам процесс инсталляции занимает не более 5-и минут вашего драгоценного времени.</p>
                     </div>
                     <div class="container-func-img">
                         <img src="src/img/feature_2.png" alt="feature_2"/>
@@ -88,16 +90,16 @@
                 </div> 
                 <div class="container-func">
                     <div class="container-func-img">
-                        <img src="src/img/feature_3.png" alt="feature_3" height="300"/>
+                        <img src="src/img/feature_3.png" alt="feature_3"/>
                     </div>
                     <div class="container-func-desc">    
                         <h3>Низкая стоимость</h3>
-                        <p>Месячная подписка на DiscoPHP стоит всего 299₽ в месяц, что соразмерно одному большому кофе. Но за эту стоимость вы получите доступ к полному функционалу DiscoPHP, включая: доступ к экспериментальным функциям, автоматическая настройка привязки групп форума к ролям Discord’а, выделенная линия в тех. поддержке, и много всего другого.</p>
+                        <p>Месячная подписка на DiscoPHP стоит всего 299₽ в месяц, что соразмерно одному большому кофе. Но за эту стоимость вы получите доступ к полному функционалу DiscoPHP, включая: доступ к экспериментальным функциям, автоматическая настройка привязки групп форума к ролям Discord'а, выделенная линия в тех. поддержке, и много всего другого.</p>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section class="stats-section">
                 <div class="cards">
                     <div class="card">
                         <div class="card-icon">
@@ -115,7 +117,7 @@
 
                     <div class="card">
                         <div class="card-icon">
-                            <img src="src/img/icon_2.png" alt="icon_2" height="128"/>
+                            <img src="src/img/icon_2.png" alt="icon_2"/>
                         </div>
                         <div class="card-desc">
                             <div class="card-desc-title">
@@ -129,7 +131,7 @@
 
                     <div class="card">
                         <div class="card-icon">
-                            <img src="src/img/icon_3.png" alt="icon_3" height="128"/>
+                            <img src="src/img/icon_3.png" alt="icon_3"/>
                         </div>
                         <div class="card-desc">
                             <div class="card-desc-title">
@@ -143,7 +145,7 @@
 
                     <div class="card">
                         <div class="card-icon">
-                            <img src="src/img/icon_4.png" alt="icon_4" height="128"/>
+                            <img src="src/img/icon_4.png" alt="icon_4"/>
                         </div>
                         <div class="card-desc">
                             <div class="card-desc-title">
@@ -157,7 +159,7 @@
                 </div>
             </section>
 
-            <section>
+            <section class="team-section">
                 <div class="container-title-experts">
                     <h2>Сделано экспертами. Для экспертов.</h2>
                 </div>  
@@ -165,13 +167,11 @@
                 <div class="container-experts">
                     <div class="container-expert">
                         <div class="container-experts-img">
-                            <img src="src/img/author_1.png" alt="developer" height="128"/>
+                            <img src="src/img/author_1.png" alt="developer"/>
                         </div>
                         <div class="container-experts-desc">
                             <h4>K0w0Mei</h4>
-                            <p>Главный разработчик
-                                <br> и дизайнер
-                            </p>
+                            <p>Главный разработчик<br>и дизайнер</p>
                         </div>
                     </div>
                     
@@ -179,23 +179,20 @@
 
                     <div class="container-expert">
                         <div class="container-experts-img">
-                            <img src="src/img/author_2.png" alt="designer" height="128"/>
+                            <img src="src/img/author_2.png" alt="designer"/>
                         </div>
                         <div class="container-experts-desc">
                             <h4>Kean</h4>
-                            <p>Главный идейный
-                                <br> вдохновитель
-                            </p>
+                            <p>Главный идейный<br>вдохновитель</p>
                         </div>
                     </div>
                 </div>
-        
             </section>
         
-            <section>
+            <footer>
                 <div class="footer-container">
                     <div class="footer-logo">
-                        <img src="src/img/logo.png" alt="DiscoPHP" height="64"/>
+                        <img src="src/img/logo.png" alt="DiscoPHP"/>
                         <p>DiscoPHP - Удобно, когда просто</p>
                     </div>
                     <div class="footer-group">
@@ -208,8 +205,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        
+            </footer>
         </div>
+        
+        <script src="src/js/menu.js"></script>
     </body>
 </html>
