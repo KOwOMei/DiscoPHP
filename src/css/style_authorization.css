@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+    font-family: "RubikMonoOne";
+    src: url("../fonts/RubikMonoOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+.header-container {
+    display: flex;
+    padding: 34px 135px;
+    justify-content: space-between;
+    width: 1920px;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo h1 {
+    font-size: 20px;
+    color: #e3e3e3;
+}
+
+.header-logo img {
+    width: 64px;
+    height: 64px;
+}
+
+.header-group {
+    display: flex;
+    align-items: center;
+    width: 1280px;
+    gap: 169px;
+}
+
+.header-list-item {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    gap: 65px;
+}
+
+.header-list-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #e3e3e3;  
+    width: 100px;  
+    height: 22px;
+    transition: color 400ms ease;
+}
+
+.header-list-item a:hover {
+    text-decoration: underline; 
+}
+
+
+.buttons-list {
+    display: flex;
+    gap: 21px;
+}
+
+.buttons-list button {
+    width: 165px;
+    height: 45px;
+    font-size: 18px;
+    color: #e3e3e3;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+.button-login {
+    border: none;
+    background-color: #064789;
+    transition: 600ms ease;
+}
+
+.button-login:hover{
+    background-color: #0d5fb1;
+    box-shadow: #2D2D2D 0px 2px 18px;
+    font-weight: 600;
+}
+
+.button-login:active{
+    background-color: #117be4;
+}
+
+
+.button-start {
+    border: 2px solid #45CB85;
+    background-color: rgba(0,0,0,0);
+    transition: 600ms ease;
+}
+
+.button-start:hover{
+    border: 2px, solid, #4ade91;
+    box-shadow: #2D2D2D 0px 2px 18px;
+    font-weight: 600;
+}
+
+.button-start:active{
+    border: 3px, solid, #4ade91;
+}
+
+
+.container-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 195px;
+}
+
+.container-title h2{
+    font-size: 72px;
+    font-family: "RubikMonoOne", sans-serif;
+    font-weight: 100;
+    color: #e3e3e3;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container-auth {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background: rgba(50, 47, 102, 0.4);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container-auth h2 {
+    color: #e3e3e3;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container-auth label {
+    color: #e3e3e3;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.container-auth-field {
+    margin-bottom: 25px;
+}
+
+.container-auth-field input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+}
+
+.container-auth-bottom {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    margin: 15px;
+    gap: 200px;
+}
+
+.container-auth-bottom a {
+    text-decoration: none; 
+    height: 45px;
+    color: #e3e3e3;
+    transition: text-decoration 400ms ease;
+}
+
+.container-auth-bottom a:hover {
+    text-decoration: underline;
+}
+
+.container-auth-bottom button {
+    width: auto;
+    height: 45px;
+    font-size: 18px;
+    color: #e3e3e3;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+.button-change-authType {
+    border: 2px solid #45CB85;
+    background-color: rgba(0,0,0,0);
+    transition: 600ms ease;
+}
+
+.button-change-authType:hover{
+    border: 2px, solid, #4ade91;
+    box-shadow: #2D2D2D 0px 2px 18px;
+}
+
+.button-change-authType:active{
+    border: 3px, solid, #4ade91;
+}
+
+
+.footer-container {
+    display: flex;
+    padding: 34px 135px;
+    justify-content: space-between;
+    width: 1920px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 250px;
+    box-sizing: border-box;
+    gap: 145px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo p {
+    width: 350px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #e3e3e3;
+}
+
+.footer-logo img {
+    width: 64px;
+    height: 64px;
+}
+
+.footer-group {
+    display: flex;
+    align-items: center;
+    width: 1280px;
+    gap: 169px;
+}
+
+.footer-list-item {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    gap: 30px;
+}
+
+.footer-list-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #e3e3e3;  
+    width: auto;  
+    height: 22px;
+}
+
+.footer-list-item a:hover {
+    text-decoration: underline;
+}
+
+
+.background {
+    width: 100%;
+    height: auto; 
+    background: linear-gradient(
+      to bottom,
+      #322F66 0%,
+      #828CBC 18%,
+      #828CBC 90%,
+      #322F66 100%
+    );
+    position: relative;
+    overflow: hidden;
+ }

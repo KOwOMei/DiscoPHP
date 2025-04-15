@@ -25,7 +25,6 @@ Disclaimer:
 ```
 git clone https://github.com/KOwOMei/DiscoPHP.git
 ```
-
 2) Откройте репозиторий через Visual Studio Code;
 3) При помощи addon'а [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) запустите сайт на локальной машине;
 4) ...

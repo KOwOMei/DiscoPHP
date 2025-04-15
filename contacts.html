@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet" />
+        <link href="src/css/style_contacts.css" rel="stylesheet" />
+        
+        <link rel="icon" href="src/img/favicon.ico" type="image/x-icon" />
+        
+        <title>DiscoPHP - Контакты</title>
+    </head>
+
+    <body>
+        <!--header-->
+        <div class="background">
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="/src/img/logo.png" alt="DiscoPHP" height="128"/>
+                    <h1>DiscoPHP</h1>
+                </div>
+                <div class="header-group">
+                    <div class="header-list">
+                        <ul class="header-list-item">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="subscribe.html">Подписка</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="discord.html">Discord</a></li>
+                        </ul>
+                    </div>
+                    <div class="buttons-list">
+                        <button class="button-login">Войти</button>
+                        <button class="button-start">Подключить</button>
+                    </div>  
+                </div>
+            </div>
+
+            <section>
+                <div class="container-title">
+                    <h2>Свяжитесь с нами</h2>
+                    <p class="subtitle">Выберите удобный способ связи</p>
+                </div>
+
+                <!-- Карточки контактов -->
+                <div class="contact-cards">
+                    <!-- Discord -->
+                    <div class="contact-card">
+                        <div class="card-content">
+                            <div class="contact-icon">
+                                <img src="src/img/discord_icon.png" alt="Discord">
+                            </div>
+                            <h3>Discord</h3>
+                            <p>Присоединяйтесь к нашему серверу для быстрой поддержки и общения с сообществом</p>
+                        </div>
+                        <a href="https://discord.gg/discophp" class="contact-link discord">discord.gg/discophp</a>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <div class="card-content">
+                            <div class="contact-icon">
+                                <img src="src/img/email_icon.webp" alt="Email">
+                            </div>
+                            <h3>Email</h3>
+                            <p>Напишите нам на почту, и мы ответим в течение 24 часов</p>
+                        </div>
+                        <a href="mailto:support@discophp.ru" class="contact-link email">support@discophp.ru</a>
+                    </div>
+
+                    <!-- Telegram -->
+                    <div class="contact-card">
+                        <div class="card-content">
+                            <div class="contact-icon">
+                                <img src="src/img/telegram_icon.webp" alt="Telegram">
+                            </div>
+                            <h3>Telegram</h3>
+                            <p>Личные вопросы и быстрая поддержка в нашем Telegram-канале</p>
+                        </div>
+                        <a href="https://t.me/discophp" class="contact-link telegram">@discophp</a>
+                    </div>
+                </div>
+
+                <!-- Форма обратной связи -->
+                <div class="contact-form-container">
+                    <h2>Форма обратной связи</h2>
+                    <p>Заполните форму, и мы свяжемся с вами в ближайшее время</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" placeholder="Введите ваше имя">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="example@mail.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема обращения</label>
+                            <select id="subject">
+                                <option value="" disabled selected>Выберите тему</option>
+                                <option value="support">Техническая поддержка</option>
+                                <option value="billing">Вопросы по оплате</option>
+                                <option value="feature">Предложения по улучшению</option>
+                                <option value="business">Деловое сотрудничество</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" rows="5" placeholder="Опишите ваш вопрос или предложение..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="button-send">Отправить сообщение</button>
+                    </form>
+                </div>
+
+                <!-- График работы -->
+                <div class="working-hours">
+                    <h2>График работы поддержки</h2>
+                    <div class="working-hours-content">
+                        <div class="working-time">
+                            <h3>Будние дни</h3>
+                            <p>09:00 - 21:00 (МСК)</p>
+                        </div>
+                        <div class="working-time">
+                            <h3>Выходные</h3>
+                            <p>10:00 - 18:00 (МСК)</p>
+                        </div>
+                        <div class="priority-support">
+                            <h3>Приоритетная поддержка</h3>
+                            <p>Доступна для владельцев Pro и Enterprise подписок</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Для бизнеса -->
+                <div class="business-contact">
+                    <h2>Для бизнес-клиентов</h2>
+                    <p>Если вы представляете компанию и хотите обсудить специальные условия или кастомные решения:</p>
+                    <div class="business-cards">
+                        <div class="business-card">
+                            <h3>Партнерская программа</h3>
+                            <p>Станьте нашим партнером и получите специальные условия</p>
+                            <a href="mailto:partners@discophp.ru" class="business-email">partners@discophp.ru</a>
+                        </div>
+                        <div class="business-card">
+                            <h3>Enterprise решения</h3>
+                            <p>Индивидуальные решения для крупного бизнеса</p>
+                            <a href="mailto:enterprise@discophp.ru" class="business-email">enterprise@discophp.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="src/img/logo.png" alt="DiscoPHP" height="64"/>
+                        <p>DiscoPHP - Удобно, когда просто</p>
+                    </div>
+                    <div class="footer-group">
+                        <div class="footer-list">
+                            <ul class="footer-list-item">
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                                <li><a href="#">Условия использования</a></li>
+                                <li><a href="#">Поддержка</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+    <script src="src/js/contact-form.js"></script>    
+</html>
