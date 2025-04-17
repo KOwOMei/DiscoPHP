@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Предотвращаем отправку формы
+            e.preventDefault();
             
             const formData = {
                 name: document.getElementById('name').value.trim(),
@@ -15,6 +15,22 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (!formData.name || !formData.email || !formData.subject || !formData.message) {
                 showNotification('Пожалуйста, заполните все поля формы', 'error');
+                return;
+            }
+            
+            const validator = new Validator();
+            if (!validator.ValidateEmail(formData.email)) {
+                showNotification('Некорректный адрес электронной почты', 'error');
+                return;
+            }
+            
+            if (!validator.ValidateName(formData.name)) {
+                showNotification('Некорректное имя', 'error');
+                return;
+            }
+            
+            if (!validator.ValidatePhone(formData.phone)) {
+                showNotification('Некорректный номер телефона', 'error');
                 return;
             }
             
